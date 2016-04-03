@@ -5,7 +5,8 @@
     .module('app', [
     'ngRoute',
     'firebase',
-    'app.landing'
+    'app.landing',
+    'app.waitList'
   ]);
 
 })()
