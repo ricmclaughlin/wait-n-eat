@@ -22,11 +22,17 @@
 
     vm.newParty = new Party();
     vm.parties = $firebaseArray(fireParties);
-    vm.addParty = addParty;
+
+    function removeParty(party) {
+      vm.parties.$remove(party);
+    }
 
     function addParty() {
       vm.parties.$add(vm.newParty);
       vm.newParty = new Party();
     }
+
+    vm.addParty = addParty;
+    vm.removeParty = removeParty;
   }
 })();
