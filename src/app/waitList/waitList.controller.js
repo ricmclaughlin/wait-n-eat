@@ -26,6 +26,7 @@
     vm.sendTextMessage = sendTextMessage;
     vm.addParty = addParty;
     vm.removeParty = removeParty;
+    vm.toggleDone = toggleDone;
 
     function removeParty(party) {
       vm.parties.$remove(party);
@@ -42,11 +43,14 @@
         size: party.size,
         name: party.name
       };
+
       fireTextMessages.push(newTextMessage);
       party.notified = true;
       vm.parties.$save(party);
     }
 
-
+    function toggleDone(party) {
+      vm.parties.$save(party);
+    }
   }
 })();

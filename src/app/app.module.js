@@ -6,7 +6,8 @@
     'ngRoute',
     'firebase',
     'app.landing',
-    'app.waitList'
+    'app.waitList',
+    'app.auth'
   ]);
 
 })()
