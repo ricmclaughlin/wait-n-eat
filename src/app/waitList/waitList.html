@@ -32,8 +32,9 @@
       <div> {{party.notified ? 'Yes' : 'No'}} </div>
     </td>
     <td>
+      <button ng-click="vm.sendTextMessage(party)" class="btn btn-success">Send SMS</button>
       <button ng-click="vm.removeParty(party)" class="btn btn-danger">Remove</button>
-      <!--    TODO: button that sends text mesage to this party-->
+
     </td>
   </tr>
 </table>
