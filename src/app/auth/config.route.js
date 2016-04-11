@@ -3,7 +3,7 @@
 
   angular
     .module('app.auth')
-    .config(configFunction)
+    .config(configFunction);
 
   configFunction.$inject = ['$routeProvider'];
 
