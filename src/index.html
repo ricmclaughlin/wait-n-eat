@@ -11,26 +11,8 @@
 </head>
 
 <body>
-  <nav ng-controller="AuthController as vm" class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#/">Wait and Eat</a>
-      </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#/login" ng-hide="vm.isLoggedIn()">Log in</a></li>
-          <li><a href="" ng-show="vm.isLoggedIn()" ng-click="vm.logout()">Log out</a></li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-  </nav>
+  <!--  nav bar directive-->
+  <gz-navbar></gz-navbar>
   <div class="container">
     <ng-view></ng-view>
   </div>
@@ -60,6 +42,10 @@
   <script src="app/auth/config.route.js"></script>
   <script src="app/auth/auth.controller.js"></script>
   <script src="app/auth/auth.service.js"></script>
+
+  <!--  layout-->
+  <script src="app/layout/layout.module.js"></script>
+  <script src="app/layout/navbar.directive.js"></script>
 </body>
 
 </html>
