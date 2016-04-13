@@ -13,6 +13,7 @@
       controller: 'AuthController',
       controllerAs: 'vm'
     });
+
     $routeProvider.when('/login', {
       templateUrl: 'app/auth/login.html',
       controller: 'AuthController',
