@@ -1,0 +1,9 @@
+{
+  "firebase": "rm-wait-eat2",
+  "public": "src",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
