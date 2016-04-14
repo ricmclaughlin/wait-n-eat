@@ -1,6 +1,1 @@
-<form ng-submit="vm.login(vm.user)" class="form-signin">
-  <h2 class="form-signin-heading">Log in</h2>
-  <input type="email" class="form-control" placeholder="Email Address" ng-model="vm.user.email" required autofocus>
-  <input type="password" class="form-control" placeholder="Password" ng-model="vm.user.password" required>
-  <button class="btn-large btn-block btn-primary btn">Log in</button>
-</form>
+<gz-auth-form error="vm.error" form-title="Log in" submit-action="vm.login(user)"></gz-auth-form>

@@ -42,7 +42,7 @@
     function sendWelcomeEmail(emailAddress) {
       firebaseDataService.emails.push({
         emailAddress: emailAddress
-      })
+      });
     }
   }
 })();
