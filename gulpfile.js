@@ -9,7 +9,7 @@ var bases = {
   dist: 'dist/',
 };
 
-gulp.task('default', ['clean'], function () {
+gulp.task('default', function () {
   gulp.start('build');
 });
 
@@ -18,7 +18,7 @@ gulp.task('clean', function () {
     .pipe(clean());
 });
 
-gulp.task('build', function () {
+gulp.task('build', ['clean'], function () {
   gulp.src(bases.app + '**/*')
     .pipe(gulp.dest(bases.dist));
 });
